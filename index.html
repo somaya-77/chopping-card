@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Product</title>
+</head>
+
+<body>
+    
+    <main>
+        <!-- header -->
+        <header>
+            <nav>
+                <h1><a href="#">Product.</a></h1>
+                <div class="search">
+                    <input type="text" placeholder="Enter your product....." id="searchPro" onkeyup="search()">
+                    <i class="fa-solid fa-bag-shopping cartIcon"></i>
+                </div>
+
+            </nav>
+        </header>
+
+        <!-- container -->
+        <section class="container-form">
+            <!-- nav menu -->
+    
+            <!-- <div class="products">
+                <section class="sectionTitle">
+                    <h2>Products</h2>
+                </section>
+    
+                <section class="content">
+                    <div class="product all phons">
+                        <div class="img-pro">
+                            <img class="image" src="../images/1.png" alt="">
+                        </div>
+                        <h5 class="titlePro">Gold Phone 300X</h5>
+                        <p class="category-name">phones</p>
+                        <div class="buy">
+                            <span class="price-pro">$170</span>
+                            <div class="count">
+                                <p>Quantity: <span>15</span></p>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+                </section>
+            </div> -->
+        </section>
+        <section class="container">
+            <!-- nav menu -->
+            <div class="menuBar">
+                <h2>Categories Filter</h2>
+                <!-- menu -->
+                <menu>
+                    <li class="category-title active" id="all"><a href="#">All Products</a></li>
+                    <li class="category-title" id="accessories"><a href="#">Accessories</a></li>
+                    <li class="category-title" id="phons"><a href="#">phons</a></li>
+                    <li class="category-title" id="cameras"><a href="#">cameras</a></li>
+                    <li class="category-title" id="computers"><a href="#">computers</a></li>
+                    <li class="category-title" id="laptops"><a href="#">laptops</a></li>
+                    <li class="category-title" id="tv&audio"><a href="#">tv & audio</a></li>
+                </menu>
+
+            </div>
+
+            <div class="products">
+                <section class="sectionTitle">
+                    <h2>Products</h2>
+                </section>
+
+                <section class="content">
+
+                    <div class="product all phons">
+                        <div class="img-pro">
+                            <img class="image" src="images/1.png" alt="">
+                        </div>
+                        <h5 class="titlePro">Gold Phone 300X</h5>
+                        <p class="category-name">phones</p>
+                        <div class="buy">
+                            <span class="price-pro">$170</span>
+                            <div class="icon">
+                                <i class="fa-solid fa-cart-shopping addCart"></i>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="product all cameras">
+                        <div class="img-pro">
+                            <img class="image" src="images/camera.png" alt="">
+                        </div>
+                        <h5 class="titlePro">black camera</h5>
+                        <p class="category-name">cameras</p>
+                        <div class="buy">
+                            <span class="price-pro">$40.50</span>
+                            <div class="icon">
+                                <i class="fa-solid fa-cart-shopping addCart"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product all tv&audio">
+                        <div class="img-pro">
+                            <img  class="image" src="images/megamenu-image0-1.png" alt="">
+                        </div>
+                        <h5 class="titlePro">Screen</h5>
+                        <p class="category-name">tv & audio</p>
+                        <div class="buy">
+                            <span class="price-pro">$230.99</span>
+                            <div class="icon">
+                                <i class="fa-solid fa-cart-shopping addCart"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product all computers">
+                        <div class="img-pro">
+                            <img  class="image" src="images/DesktopPc-1-300x275-1.png" alt="">
+                        </div>
+                        <h5 class="titlePro">disktop</h5>
+                        <p class="category-name">computers</p>
+                        <div class="buy">
+                            <span class="price-pro">$170</span>
+                            <div class="icon">
+                                <i class="fa-solid fa-cart-shopping addCart"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product all accessories">
+                        <div class="img-pro">
+                            <img  class="image" class="image" src="images/4-300x275-1.png" alt="">
+                        </div>
+                        <h5 class="titlePro">product</h5>
+                        <p class="category-name">accessories</p>
+                        <div class="buy">
+                            <span class="price-pro">$31.70</span>
+                            <div class="icon">
+                                <i class="fa-solid fa-cart-shopping addCart"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product all tv&audio">
+                        <div class="img-pro">
+                            <img  class="image" src="images/megamenu-image2-1.png" alt="">
+                        </div>
+                        <h5 class="titlePro">screen 300X</h5>
+                        <p class="category-name">tv & audio</p>
+                        <div class="buy">
+                            <span class="price-pro">$325</span>
+                            <div class="icon">
+                                <i class="fa-solid fa-cart-shopping addCart"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product all accessories">
+                        <div class="img-pro">
+                            <img  class="image" src="images/prodcut-300x300.png" alt="">
+                        </div>
+                        <h5 class="titlePro">soundes</h5>
+                        <p class="category-name">accessories</p>
+                        <div class="buy">
+                            <span class="price-pro">$24</span>
+                            <div class="icon">
+                                <i class="fa-solid fa-cart-shopping addCart"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product all cameras">
+                        <div class="img-pro">
+                            <img  class="image" src="images/camera2-300x300.png" alt="">
+                        </div>
+                        <h5 class="titlePro">camera</h5>
+                        <p class="category-name">cameras</p>
+                        <div class="buy">
+                            <span class="price-pro">$29.30</span>
+                            <div class="icon">
+                                <i class="fa-solid fa-cart-shopping addCart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product all tv&audio">
+                        <div class="img-pro">
+                            <img class="image"  src="images/megamenu-image1-1.png" alt="">
+                        </div>
+                        <h5 class="titlePro">big screen</h5>
+                        <p class="category-name">tv & audio</p>
+                        <div class="buy">
+                            <span class="price-pro">$299</span>
+                            <div class="icon">
+                                <i class="fa-solid fa-cart-shopping addCart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+    <section class="cart">
+        <h3>Your Cart </h3>
+        <i class="fa-solid fa-x"  id="close-cart"></i>
+
+        <div class="products-cart">
+
+        </div>
+
+        <div class="footer-cart">
+            <div class="price-total">
+                <h4>Total:</h4>
+                <p id="total-price">$0</p>
+            </div>
+            <div class="btn">
+                <button class="buyNow">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

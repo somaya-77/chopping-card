@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&family=Almarai:wght@300;400;700;800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:wght@300;400;700&family=Oswald:wght@200;300;400;500;600;700&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Patrick+Hand&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;1,100&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+    list-style: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+
+}
+body{
+    background: #fff;
+    color: #666;
+    position: relative;
+}
+header{
+    background: #fff;
+    width: 100%;
+    position: fixed;
+    box-shadow: 0 1px 4px hsl(0 4% 15% / 10%);
+    z-index: 100;
+}
+nav{
+    margin: auto;
+    width: 70%;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+h1 a{
+    color: #ff0000;
+    font-size: 35px;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+.search{
+    display: flex;
+}
+.search input{
+    background: #fff;
+    border: none;
+    outline: none;
+    padding: 7px 20px;
+    width: 300px;
+    border-bottom: 2px solid #eee;
+    margin-right: 20px;
+}
+.cartIcon{
+    cursor: pointer;
+    margin: 0 15px;
+}
+.container{
+    padding: 55px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.menuBar{
+    position: fixed;
+    left: 0;
+    width: 20%;
+    height: 100vh;
+    padding: 50px 25px;
+    box-shadow: 0 1px 4px hsl(0 4% 15% / 10%);
+}
+.products{
+    width: 80%;
+    position: relative;
+    left: 20%;
+    padding: 50px 25px;
+}
+h2{
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+.menuBar h2{
+    border-bottom: 2px #ff0000 solid;
+    width: fit-content;
+}
+menu li a {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 15px 25px;
+    color: #777;
+    transition: all 0.35s linear;
+    text-transform: capitalize;
+
+}
+menu li:hover a,menu li.active a{
+    background: #ff0000;
+    color: #fff;
+    transform: scale(1.2);
+}
+
+section.cart{
+    z-index: 100;
+    position: relative;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 25%;
+    height: 100vh;
+    box-shadow: 0 1px 4px hsl(0 4% 15% / 10%);
+    transition: all 0.5s ease;
+    overflow-y: auto;
+}
+section.cart.active{
+    right: 0;
+    transition: all 0.5s ease;
+}
+h3{
+    text-align: center;
+    margin: 60px 0 0;
+    font-size: 30px;
+    color: #000;
+    font-weight: 500;
+}
+#close-form,
+#close-cart{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.products-cart{
+    padding: 20px 20px 0;
+}
+.product-cart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    background: #eee;
+    padding: 10px;
+}
+.contain {
+    display: flex;
+    align-items: center;
+}
+.img-cart{
+    width: 30%;
+    margin-right: 20px;
+}
+.img-cart img{
+    width: 100%;
+    
+}
+.detail-pro h4{
+    font-weight: 500;
+    font-size: 19px;
+    color: #000;
+}
+.detail-pro p{
+    font-size: 19px;
+}
+.detail-pro input{
+    width: 25%;
+    outline: none;
+}
+.delete{
+    cursor: pointer;
+}
+.footer-cart{
+    margin: 20px;
+    padding-top: 10px;
+    border-top: 2px solid #000;
+    
+}
+.footer-cart h4{
+    color: #000;
+    font-size: 21px;
+    font-weight: 500;
+}
+.footer-cart p{
+    color: #000;
+    font-size: 18px;
+    color: #ff0000;
+}
+.price-total{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.btn {
+    text-align: center;
+    margin-top: 20px;
+}
+.footer-cart button{
+    cursor: pointer;
+    border: none;
+    background: #ff0000;
+    color: #fff;
+    font-weight: bold;
+    width: 60%;
+    padding: 10px 0;
+    font-size: 19px;
+}
+
+/* //////////////////////////////////////////////// */
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+    text-transform: capitalize;
+}
+.product{
+    width: 24%;
+    border: 1px solid #ff0000;
+    cursor: pointer;
+    padding: 10px;
+    transition: 0.25s linear;
+}
+.product:hover{
+    border: 1px solid #615b5b;
+}
+.product h5{
+    color: #ff0000;
+    font-size: 19px;
+    transition: 0.25s;
+}
+.product:hover h5{
+    color: #615b5b;
+    font-size: 19px;
+}
+.img-pro{
+    width: 100%;
+    margin: auto auto 10px;
+}
+.img-pro img{
+    width: 100%;
+}
+.category-name{
+    font-weight: bold;
+    letter-spacing: -2px;
+    color: #0621bdd3;
+}
+.buy{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.buy span{
+    font-weight: bold;
+}
+.buy .box-icon {
+    cursor: pointer;
+}
+
+
+
+
+/* ************* FORM ********************** */
+section.container-form{
+    z-index: 100;
+    position: relative;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 25%;
+    height: 100vh;
+    box-shadow: 0 1px 4px hsl(0 4% 15% / 10%);
+    transition: all 0.5s ease;
+    padding:80px 50px;
+}
+section.container-form.active{
+    right: 0;
+    transition: all 0.5s ease;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+form input {
+    outline: unset;
+}
+form select,form input {
+    padding: 7px 15px;
+}
+#image{
+    display: none;
+}
+.imgAddPro{
+    text-align: center;
+    cursor: pointer;
+    background: red;
+    color: #fff;
+    width: fit-content;
+    margin: 15px auto;
+    padding: 9px 15px;
+    border: 1px solid transparent;
+    transition: 0.35s;
+}
+.imgAddPro:hover{
+    border: 1px solid #000;
+
+}
+#add-new {
+    cursor: pointer;
+    border: none;
+    font-size: 19px;
+    padding: 9px 15px;
+    border: 1px solid transparent;
+    transition: 0.35s;
+}
+#add-new:hover {
+    border: 1px solid #000;
+}
